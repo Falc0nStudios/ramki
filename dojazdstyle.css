@@ -1,0 +1,225 @@
+body
+{
+    width: 100%;
+    margin: 0px;
+    padding: 0px;
+    background-color: #101010;
+    color: white;
+}
+
+.field
+{
+    width: 70vw;
+    height: 70vh;
+    margin: 10vh;
+    margin-bottom: 0;
+    border: 8px solid #ECC00B;
+    border-radius: 35px;
+    margin-bottom: 10vh;
+}
+
+.maplegend
+{
+    margin-left: 5vw;
+    font-size: 5vh;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.map
+{
+    width: 100%;
+    height: 100%;
+    border-radius: 25px;
+    margin-bottom: 5vh;
+}
+
+.fieldhour
+{
+    width: fit-content;
+    height: fit-content;
+    margin: 10vh;
+    border: 8px solid #ECC00B;
+    border-radius: 35px;
+    float: right;
+    clear: both;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.hourlegend
+{
+    margin-right: 5vw;
+    font-size: 5vh;
+    padding-left: 1vw;
+    padding-right: 1vw;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.hourcontainer
+{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-content: center;
+    flex-wrap: wrap;
+    background-color: transparent;
+}
+
+.hourcon
+{
+    width: fit-content;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 1vw;
+    background-color: transparent;
+}
+
+.ramkihourlogo
+{
+    width: 15vw;
+    object-fit: contain;
+    height: 15vh;
+}
+
+.godziny
+{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    margin-top: 2vh;
+    background-color: transparent;
+}
+
+.dnityg
+{
+    width: 15vw;
+    height: 100%;
+    border-right: 5px solid white;
+    margin-right: 1.5vw;
+    background-color: transparent;
+}
+
+.godz
+{
+    width: fit-content;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-content: flex-end;
+    flex-wrap: wrap;
+    background-color: transparent;
+    align-items: center;
+}
+
+p
+{
+    width: fit-content;
+    margin: 0;
+    margin-bottom: 1vh;
+    width: fit-content;
+    font-size: 2vw;
+    background-color: transparent;
+    color: white;
+}
+
+#ndr
+{
+    margin-bottom: 0;
+}
+
+#nds
+{
+    margin-bottom: 0;
+}
+
+#ndhours
+{
+    margin-bottom: 0;
+}
+
+#ndhourss
+{
+    margin-bottom: 0;
+}
+
+.ramkiback
+{
+    height: 70vh;
+    display: block;
+    position: absolute;
+    margin: auto;
+    z-index: -1;
+    margin-top: -4.5vh;
+    margin-left: 7vw;
+    filter: brightness(1);
+}
+
+
+#wt
+{
+    color: white;
+}
+
+.oznakgodz
+{
+    width: fit-content;
+    display: flex;
+    flex-direction: row;
+    margin: 0 auto;
+}
+
+.dot
+{
+    height: 2vh;
+    width: 2vh;
+    background-color: #0bec87;
+    border-radius: 50%;
+    display: inline-block;
+    margin-right: 0.3vw;
+}
+
+.doto
+{
+    height: 2vh;
+    width: 2vh;
+    background-color: #ec7f0b;
+    border-radius: 50%;
+    display: inline-block;
+    margin-right: 0.3vw;
+}
+
+.dotr
+{
+    height: 2vh;
+    width: 2vh;
+    background-color: red;
+    border-radius: 50%;
+    display: inline-block;
+    margin-right: 0.3vw;
+}
+
+.oznakgodz p
+{
+    width: fit-content;
+    font-size: 2vh;
+    margin: 0;
+    display: flex;
+    gap: 1vw;
+}
+
+.cont
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

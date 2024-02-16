@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Ramki | Kontakt</title>
+	<link rel="stylesheet" type="text/css" href="kontaktstyle.css">
+	<link rel="stylesheet" type="text/css" href="header.css">
+	<script src='https://www.google.com/recaptcha/api.js?render=6Lc_SmApAAAAAJzQ4NVXKi2uS6cYq6J85SXq-vRg'></script>
+	<link rel="icon" href="ramico.ico">
+</head>
+<body>
+
+	<header>
+		<img class="logoheader" src="logonavp.png">
+		<nav>
+			<a class="link" href="index.html">Strona Główna</a>
+			<a class="link" href="menu.html">Menu</a>
+			<a class="link" href="galeria.html">Galeria</a>
+			<a class="link" href="dojazd.html">Dojazd i Godziny Otwarcia</a>
+			<a class="link active" href="kontakt.html">Kontakt i Rezerwacje</a>
+		</nav>
+		<img id="fb" onclick="fb()" src="facebook.png">
+		<img id="ig" onclick="ig()" src="instagram.png">
+	</header>
+
+	<div class="przedzial">
+		<p class="przedzialtxt">Kontakt i Rezerwacje</p>
+	</div>
+
+
+	<!--<div class="kontaktcont">
+		<div class="kontakt">
+			<h1>Rezerwacje</h1>	
+			<h2>Ramki</h2>
+			<div class="mailphone"><img class="marker" src="phone.png"><p class="mailnumer">604 508 853</p></div>
+			<div class="mailphone"><img class="marker" src="mail.png"><p class="mailnumer">kontakt@restauracjaramki.pl</p></div>
+			<h2 class="siek">Siekany Mieszany</h2>
+			<div class="mailphonesiek"><p class="mailnumer">604 509 371</p><img class="markersiek" src="phone.png"></div>
+			<div class="mailphonesiek"><p class="mailnumer">kontakt@siekanymieszany.pl</p><img class="markersiek" src="mail.png"></div>
+		</div>
+		<div class="imgborder"><img class="kontaktrez" src="kontaktrez.jpg"></div>	
+	</div>-->
+
+	<div class="sitecontainer">
+		<div class="kontaktnr">
+			<h1 class="nota">
+				<span style="color: #ECC00B;">Szanowni Goście,</span><br><br>Cieszymy się, że planujecie odwiedzić nasze restauracje &#128516;. Chcielibyśmy poinformować, że obecnie przyjmujemy rezerwacje zarówno telefonicznie, jak i za pośrednictwem formularza online.
+			</h1>
+			<div class="telefony">
+				<h2 class="nazrez">Ramki:</h2>
+				<span style="width: fit-content; height: fit-content; display: flex;"><img class="marker" src="phone.png"><a class="tel" href="tel:604-508-853">+48 604 508 853</a></span>
+				<span style="width: fit-content; height: fit-content; display: flex;"><img class="marker" src="mail.png"><a class="tel" href="mailto:kontakt@restauracjaramki.pl">kontakt@restauracjaramki.pl</a></span>
+				<br>
+				<h2 class="nazrez">Siekany Mieszany:</h2>
+				<span style="width: fit-content; height: fit-content; display: flex;"><img class="marker" src="phone.png"><a class="tel" href="tel:604-509-371">+48 604 509 371</a></span>
+				<span style="width: fit-content; height: fit-content; display: flex;"><img class="marker" src="mail.png"><a class="tel" href="mailto:kontakt@siekanymieszany.pl">kontakt@siekanymieszany.pl</a></span>
+			</div>
+		</div>
+
+		<fieldset class="rezform">
+			<img class="ramkiback" src="ramkipion.png">
+			<legend class="rezlegend">Zarezerwój Stolik</legend>
+			<form action="" method="post" id="rezerwacjeform">
+
+				<div class="iiig">
+					<span class="blocki">
+						<label>Imię:</label>
+						<input type="text" id="name" name="name" required>
+					</span>
+					<span class="blockg">
+						<label>L. gości:</label>
+						<input type="number" id="guests" name="guests" min="1" max="25" required>
+					</span>
+				</div>
+
+				<label>Email:</label>
+				<input type="email" id="email" name="email" required>
+				<label>Numer telefonu:</label>
+				<input type="tel" id="phone" name="phone" pattern="[0-9]{9}" required>
+
+				<label>Wybierz Salę:</label>
+				<div class="wsala">
+					<label class="psala"><input type="radio" name="sala" id="rk" required><img src="ramki.svg" alt=""></label>
+					<label class="psala"><input type="radio" name="sala" id="sk" required><img src="siekany.svg" alt=""></label>
+				</div>
+
+				<div class="iiig">
+					<span class="blockd">
+						<label>Data:</label>
+						<input type="date" id="date" name="date" min="" required>
+					</span>
+					<span class="blockgdz">
+						<label>Godzina:</label>
+						<input type="time" id="time" name="time" min="09:00" max="21:00" required>
+					</span>
+				</div>
+
+				<label>Uwagi:</label>
+				<textarea id="uwg"></textarea>
+
+				<button type="submit" id="zarezerw">Zarezerwój Stolik</button>
+				<input type="hidden" id="g-recaptcha-response" name="g-recaptcha-response">
+			</form>
+		</fieldset>
+	</div>
+	
+	<script>
+		grecaptcha.ready(function() {
+		grecaptcha.execute('6Lc_SmApAAAAAJzQ4NVXKi2uS6cYq6J85SXq-vRg', {action: 'submit_form'}).then(function(token) {
+			// Set the value of the hidden input field to the token
+			document.getElementById('g-recaptcha-response').value = token;
+		});
+		});
+	</script>
+
+	<footer>
+		<div class="kontakts">
+			<p class="ktxt">bądźmy w kontakcie:</p>
+			<h1 class="hram">Ramki Restauracja</h1>
+			<p class="adtxt">Piotrkowska 144, Łódź | 90-062</p>
+			<h1 class="hk">+48 604 508 853</h1>
+			<h1 class="hk">kontakt@restauracjaramki.pl</h1>
+		</div>
+		<div class="logas">
+			<img class="footimg" src="siekany.png">
+			<img class="footimg rmimg" src="ramkifoot.png">
+			<img class="footimg" src="delanoai.png">
+		</div>
+	</footer>
+
+	<div class="podpis">
+		<p class="pdtxt">2023 &copy; Robert Stań dla Restauracji Ramki</p>
+	</div>
+
+	<script src="header.js"></script>
+	<script src="rezerwacje.js"></script>
+	<script src="https://smtpjs.com/v3/smtp.js"></script>
+
+</body>
+</html>

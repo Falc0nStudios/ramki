@@ -1,0 +1,12 @@
+dnozpnnppnrcmfca
+security token -smtp: b97a0539-1561-4b40-b33e-6a33e4606627
+
+Email.send({
+    SecureToken : "b97a0539-1561-4b40-b33e-6a33e4606627",
+    To : 'robertstann.2005@gmail.com',
+    From : "ramkirestauracjarezerwacje@gmail.com",
+    Subject : "Rezerwacja",
+    Body : "And this is the body"
+}).then(
+  message => alert(message)
+);

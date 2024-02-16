@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Ramki | Galeria</title>
+	<link rel="stylesheet" type="text/css" href="galeriastyle.css">
+	<link rel="stylesheet" type="text/css" href="header.css">
+	<link rel="icon" href="ramico.ico">
+</head>
+<body>
+
+	<header>
+		<img class="logoheader" src="logonavp.png">
+		<nav>
+			<a class="link" href="index.html">Strona Główna</a>
+			<a class="link" href="menu.html">Menu</a>
+			<a class="link active" href="galeria.html">Galeria</a>
+			<a class="link" href="dojazd.html">Dojazd i Godziny Otwarcia</a>
+			<a class="link" href="kontakt.html">Kontakt i Rezerwacje</a>
+		</nav>
+		<img id="fb" onclick="fb()" src="facebook.png">
+		<img id="ig" onclick="ig()" src="instagram.png">
+	</header>
+
+	<div id="fullekran">
+		<img class="fullclose" onclick="fullclose()" src="closealt.png">
+		<img class="previmg" onclick="previmg()" src="la.png">
+		<div class="feocont"><img id="feo"></div>
+		<img class="nextimg" onclick="nextimg()" src="ra.png">
+	</div>
+
+	<div class="przedzial">
+		<p class="przedzialtxt">Galeria</p>
+	</div>
+
+	<div class="row">
+	  <div class="column">
+	  	<div class="fulcon"><img id="photo" onclick="fullekran(this.src)" src="zdj/1.webp"><img class="fulico" src="fulscr.png"></div>
+	    <div class="fulcon"><img id="photo" onclick="fullekran(this.src)" src="zdj/4.webp"><img class="fulico" src="fulscr.png"></div>
+	    <div class="fulcon"><img id="photo" onclick="fullekran(this.src)" src="zdj/7.webp"><img class="fulico" src="fulscr.png"></div>
+	    <div class="fulcon"><img id="photo" onclick="fullekran(this.src)" src="zdj/10.webp"><img class="fulico" src="fulscr.png"></div>
+	    <div class="fulcon"><img id="photo" onclick="fullekran(this.src)" src="zdj/13.webp"><img class="fulico" src="fulscr.png"></div>
+	    <div class="fulcon"><img id="photo" onclick="fullekran(this.src)" src="zdj/16.webp"><img class="fulico" src="fulscr.png"></div>
+	    <div class="fulcon"><img id="photo" onclick="fullekran(this.src)" src="zdj/19.webp"><img class="fulico" src="fulscr.png"></div>
+	    <div class="fulcon"><img id="photo" onclick="fullekran(this.src)" src="zdj/22.webp"><img class="fulico" src="fulscr.png"></div>
+	    <div class="fulcon"><img id="photo" onclick="fullekran(this.src)" src="zdj/25.webp"><img class="fulico" src="fulscr.png"></div>
+	    <div class="fulcon"><img id="photo" onclick="fullekran(this.src)" src="zdj/28.webp"><img class="fulico" src="fulscr.png"></div>
+	    <div class="fulcon"><img id="photo" onclick="fullekran(this.src)" src="zdj/31.webp"><img class="fulico" src="fulscr.png"></div>
+	    <div class="fulcon"><img id="photo" onclick="fullekran(this.src)" src="zdj/34.webp"><img class="fulico" src="fulscr.png"></div>
+	    <div class="fulcon"><img id="photo" onclick="fullekran(this.src)" src="zdj/37.webp"><img class="fulico" src="fulscr.png"></div>
+	    <div class="fulcon"><img id="photo" onclick="fullekran(this.src)" src="zdj/40.webp"><img class="fulico" src="fulscr.png"></div>
+	    <div class="fulcon"><img id="photo" onclick="fullekran(this.src)" src="zdj/43.webp"><img class="fulico" src="fulscr.png"></div>
+	    <div class="fulcon"><img id="photo" onclick="fullekran(this.src)" src="zdj/46.webp"><img class="fulico" src="fulscr.png"></div>
+	    <div class="fulcon"><img id="photo" onclick="fullekran(this.src)" src="zdj/49.webp"><img class="fulico" src="fulscr.png"></div>
+	  </div>
+	  <div class="column">
+	    <div class="fulcon"><img id="photo" onclick="fullekran(this.src)" src="zdj/2.webp"><img class="fulico" src="fulscr.png"></div>
+	    <div class="fulcon"><img id="photo" onclick="fullekran(this.src)" src="zdj/5.webp"><img class="fulico" src="fulscr.png"></div>
+	    <div class="fulcon"><img id="photo" onclick="fullekran(this.src)" src="zdj/8.webp"><img class="fulico" src="fulscr.png"></div>
+	    <div class="fulcon"><img id="photo" onclick="fullekran(this.src)" src="zdj/11.webp"><img class="fulico" src="fulscr.png"></div>
+	    <div class="fulcon"><img id="photo" onclick="fullekran(this.src)" src="zdj/14.webp"><img class="fulico" src="fulscr.png"></div>
+	    <div class="fulcon"><img id="photo" onclick="fullekran(this.src)" src="zdj/17.webp"><img class="fulico" src="fulscr.png"></div>
+	    <div class="fulcon"><img id="photo" onclick="fullekran(this.src)" src="zdj/20.webp"><img class="fulico" src="fulscr.png"></div>
+	    <div class="fulcon"><img id="photo" onclick="fullekran(this.src)" src="zdj/23.webp"><img class="fulico" src="fulscr.png"></div>
+	    <div class="fulcon"><img id="photo" onclick="fullekran(this.src)" src="zdj/26.webp"><img class="fulico" src="fulscr.png"></div>
+	    <div class="fulcon"><img id="photo" onclick="fullekran(this.src)" src="zdj/29.webp"><img class="fulico" src="fulscr.png"></div>
+	    <div class="fulcon"><img id="photo" onclick="fullekran(this.src)" src="zdj/32.webp"><img class="fulico" src="fulscr.png"></div>
+	    <div class="fulcon"><img id="photo" onclick="fullekran(this.src)" src="zdj/35.webp"><img class="fulico" src="fulscr.png"></div>
+	    <div class="fulcon"><img id="photo" onclick="fullekran(this.src)" src="zdj/38.webp"><img class="fulico" src="fulscr.png"></div>
+	    <div class="fulcon"><img id="photo" onclick="fullekran(this.src)" src="zdj/41.webp"><img class="fulico" src="fulscr.png"></div>
+	    <div class="fulcon"><img id="photo" onclick="fullekran(this.src)" src="zdj/44.webp"><img class="fulico" src="fulscr.png"></div>
+	    <div class="fulcon"><img id="photo" onclick="fullekran(this.src)" src="zdj/47.webp"><img class="fulico" src="fulscr.png"></div>
+	  </div>
+	  <div class="column">
+	    <div class="fulcon"><img id="photo" onclick="fullekran(this.src)" src="zdj/3.webp"><img class="fulico" src="fulscr.png"></div>
+	    <div class="fulcon"><img id="photo" onclick="fullekran(this.src)" src="zdj/6.webp"><img class="fulico" src="fulscr.png"></div>
+	    <div class="fulcon"><img id="photo" onclick="fullekran(this.src)" src="zdj/9.webp"><img class="fulico" src="fulscr.png"></div>
+	    <div class="fulcon"><img id="photo" onclick="fullekran(this.src)" src="zdj/12.webp"><img class="fulico" src="fulscr.png"></div>
+	    <div class="fulcon"><img id="photo" onclick="fullekran(this.src)" src="zdj/15.webp"><img class="fulico" src="fulscr.png"></div>
+	    <div class="fulcon"><img id="photo" onclick="fullekran(this.src)" src="zdj/18.webp"><img class="fulico" src="fulscr.png"></div>
+	    <div class="fulcon"><img id="photo" onclick="fullekran(this.src)" src="zdj/21.webp"><img class="fulico" src="fulscr.png"></div>
+	    <div class="fulcon"><img id="photo" onclick="fullekran(this.src)" src="zdj/24.webp"><img class="fulico" src="fulscr.png"></div>
+	    <div class="fulcon"><img id="photo" onclick="fullekran(this.src)" src="zdj/27.webp"><img class="fulico" src="fulscr.png"></div>
+	    <div class="fulcon"><img id="photo" onclick="fullekran(this.src)" src="zdj/30.webp"><img class="fulico" src="fulscr.png"></div>
+	    <div class="fulcon"><img id="photo" onclick="fullekran(this.src)" src="zdj/33.webp"><img class="fulico" src="fulscr.png"></div>
+	    <div class="fulcon"><img id="photo" onclick="fullekran(this.src)" src="zdj/36.webp"><img class="fulico" src="fulscr.png"></div>
+	    <div class="fulcon"><img id="photo" onclick="fullekran(this.src)" src="zdj/39.webp"><img class="fulico" src="fulscr.png"></div>
+	    <div class="fulcon"><img id="photo" onclick="fullekran(this.src)" src="zdj/42.webp"><img class="fulico" src="fulscr.png"></div>
+	    <div class="fulcon"><img id="photo" onclick="fullekran(this.src)" src="zdj/45.webp"><img class="fulico" src="fulscr.png"></div>
+	    <div class="fulcon"><img id="photo" onclick="fullekran(this.src)" src="zdj/48.webp"><img class="fulico" src="fulscr.png"></div>
+	    <div class="fulcon"><img id="photo" onclick="fullekran(this.src)" src="zdj/50.webp"><img class="fulico" src="fulscr.png"></div>
+	  </div>
+	</div>
+
+	<footer>
+		<div class="kontakts">
+			<p class="ktxt">bądźmy w kontakcie:</p>
+			<h1 class="hram">Ramki Restauracja</h1>
+			<p class="adtxt">Piotrkowska 144, Łódź | 90-062</p>
+			<h1 class="hk">+48 604 508 853</h1>
+			<h1 class="hk">kontakt@restauracjaramki.pl</h1>
+		</div>
+		<div class="logas">
+			<img class="footimg" src="siekany.png">
+			<img class="footimg rmimg" src="ramkifoot.png">
+			<img class="footimg" src="delanoai.png">
+		</div>
+	</footer>
+
+	<div class="podpis">
+		<p class="pdtxt">2023 &copy; Robert Stań dla Restauracji Ramki</p>
+	</div>
+
+	<script src="header.js"></script>
+
+</body>
+</html>

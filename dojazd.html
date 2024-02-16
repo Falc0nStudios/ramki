@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Ramki | Dojazd</title>
+	<link rel="stylesheet" type="text/css" href="dojazdstyle.css">
+	<link rel="stylesheet" type="text/css" href="header.css">
+	<link rel="icon" href="ramico.ico">
+</head>
+<body>
+	<header>
+		<img class="logoheader" src="logonavp.png">
+		<nav>
+			<a class="link" href="index.html">Strona Główna</a>
+			<a class="link" href="menu.html">Menu</a>
+			<a class="link" href="galeria.html">Galeria</a>
+			<a class="link active" href="dojazd.html">Dojazd i Godziny Otwarcia</a>
+			<a class="link" href="kontakt.html">Kontakt i Rezerwacje</a>
+		</nav>
+		<img id="fb" onclick="fb()" src="facebook.png">
+		<img id="ig" onclick="ig()" src="instagram.png">
+	</header>
+
+	<div class="przedzial">
+		<p class="przedzialtxt">Dojazd i Godziny Otwarcia</p>
+	</div>
+
+	<fieldset class="fieldhour">
+		<img class="ramkiback" src="ramkiback.png">
+		<legend align="right" class="hourlegend">Godziny Otwarcia</legend>
+
+		<div class="hourcontainer">
+			 <div class="hourcon">
+			 	<img class="ramkihourlogo" src="ramkilogo.png">
+			 	<div class="godziny">
+			 		<div class="dnityg">
+			 			<p id="pnr">Poniedziałek</p>
+			 			<p id="wtr">Wtorek</p>
+			 			<p id="srr">Środa</p>
+			 			<p id="czwr">Czwartek</p>
+			 			<p id="ptr">Piątek</p>
+			 			<p id="sbr">Sobota</p>
+			 			<p id="ndr">Niedziela</p>
+			 		</div>
+			 		<div class="godz">
+			 			<p id="pnhours">12:00 - 22:00</p>
+			 			<p id="wthours">12:00 - 22:00</p>
+			 			<p id="srhours">12:00 - 22:00</p>
+			 			<p id="czwhours">12:00 - 22:00</p>
+			 			<p id="pthours">12:00 - 23:00</p>
+			 			<p id="sbhours">9:00 - 23:00</p>
+			 			<p id="ndhours">9:00 - 20:00</p>
+			 		</div>
+			 	</div>
+			 </div>
+
+			 <div class="hourcon">
+			 	<img class="ramkihourlogo" src="siekany.png">
+			 	<div class="godziny">
+			 		<div class="dnityg">
+			 			<p id="pns">Poniedziałek</p>
+			 			<p id="wts">Wtorek</p>
+			 			<p id="srs">Środa</p>
+			 			<p id="czws">Czwartek</p>
+			 			<p id="pts">Piątek</p>
+			 			<p id="sbs">Sobota</p>
+			 			<p id="nds">Niedziela</p>
+			 		</div>
+			 		<div class="godz">
+						<p id="pnhourss">12:00 - 22:00</p>
+						<p id="wthourss">12:00 - 22:00</p>
+						<p id="srhourss">12:00 - 22:00</p>
+						<p id="czwhourss">12:00 - 22:00</p>
+						<p id="pthourss">12:00 - 23:00</p>
+						<p id="sbhourss">9:00 - 23:00</p>
+						<p id="ndhourss">9:00 - 20:00</p>
+			 		</div>
+			 	</div>
+			 </div>
+		</div>
+
+		<!-- <div class="ramkihour">
+			<img class="ramkihourlogo" src="ramkilogo.png">
+			<div class="hourcontainer">
+				<div class="dnityg">
+					<p class="phour">Poniedziałek</p>
+					<p class="phour">Wtorek</p>
+					<p class="phour">Środa</p>
+					<p class="phour">Czwartek</p>
+					<p class="phour">Piątek</p>
+					<p class="phour">Sobota</p>
+					<p class="phournd">Niedziela</p>
+				</div>
+				<div class="godziny">
+					<p class="phour">9:00 - 22:00</p>
+					<p class="phour">9:00 - 22:00</p>
+					<p class="phour">9:00 - 22:00</p>
+					<p class="phour">9:00 - 22:00</p>
+					<p class="phour">9:00 - 23:00</p>
+					<p class="phour">9:00 - 23:00</p>
+					<p class="phournd">9:00 - 20:00</p>
+				</div>
+			</div>
+		</div>
+		
+		<div class="siekanyhour">
+			<img class="ramkihourlogo" src="siekany.png">
+			<div class="hourcontainer">
+				<div class="dnityg">
+					<p class="phour">Poniedziałek</p>
+					<p class="phour">Wtorek</p>
+					<p class="phour">Środa</p>
+					<p class="phour">Czwartek</p>
+					<p class="phour">Piątek</p>
+					<p class="phour">Sobota</p>
+					<p class="phournd">Niedziela</p>
+				</div>
+				<div class="godziny">
+					<p class="phour">16:00 - 22:00</p>
+					<p class="phour">16:00 - 22:00</p>
+					<p class="phour">16:00 - 22:00</p>
+					<p class="phour">16:00 - 22:00</p>
+					<p class="phour">16:00 - 00:00</p>
+					<p class="phour">13:00 - 00:00</p>
+					<p class="phournd">13:00 - 20:00</p>
+				</div>
+			</div>
+		</div> -->
+		<div class="oznakgodz">
+			<p><span class="cont"><span class="dot"></span> - Otwarte</span><span class="cont"><span class="doto"></span> - Wkrótce Zamykamy</span><span class="cont"><span class="dotr"></span> - Zamknięte</span></p>
+		</div>
+	</fieldset>
+
+	<fieldset class="field">
+		<legend class="maplegend">Gdzie Jesteśmy?</legend>
+		<iframe class="map" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d9877.930329935802!2d19.4585399!3d51.7607844!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x471a35fc7afc43fd%3A0x71860c28cc2c761e!2sRamki%20Restauracja!5e0!3m2!1spl!2spl!4v1695668072794!5m2!1spl!2spl" width="800" height="600" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+	</fieldset>
+
+	<footer>
+		<div class="kontakts">
+			<p class="ktxt">bądźmy w kontakcie:</p>
+			<h1 class="hram">Ramki Restauracja</h1>
+			<p class="adtxt">Piotrkowska 144, Łódź | 90-062</p>
+			<h1 class="hk">+48 604 508 853</h1>
+			<h1 class="hk">kontakt@restauracjaramki.pl</h1>
+		</div>
+		<div class="logas">
+			<img class="footimg" src="siekany.png">
+			<img class="footimg rmimg" src="ramkifoot.png">
+			<img class="footimg" src="delanoai.png">
+		</div>
+	</footer>
+
+	<div class="podpis">
+		<p class="pdtxt">2023 &copy; Robert Stań dla Restauracji Ramki</p>
+	</div>
+
+	<script src="header.js"></script>
+	<script src="godzotw.js"></script>
+
+</body>
+</html>

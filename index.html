@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Ramki | Restuaracja</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-element-bundle.min.css" />
+	<link rel="stylesheet" type="text/css" href="header.css">
+	<link rel="icon" href="ramico.ico">
+</head>
+<body>
+
+	<div class="bg">
+		<img class="centerlogo" src="ramkilogo.png">
+	</div>
+
+	<header>
+		<img class="logoheader" src="logonavp.png">
+		<nav>
+			<a class="link active" href="index.html">Strona Główna</a>
+			<a class="link" href="menu.html">Menu</a>
+			<a class="link" href="galeria.html">Galeria</a>
+			<a class="link" href="dojazd.html">Dojazd i Godziny Otwarcia</a>
+			<a class="link" href="kontakt.html">Kontakt i Rezerwacje</a>
+		</nav>
+		<img id="fb" onclick="fb()" src="facebook.png">
+		<img id="ig" onclick="ig()" src="instagram.png">
+	</header>
+	
+	<!--<div class="ramkiopis">
+		<img src="zewn.jpg" class="zewn">
+		<div class="opis">
+			<img class="opislogo" src="ramkilogo.png">
+			<p class="opistext">
+				Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam orci mi, faucibus a aliquam vitae, luctus ut odio. Curabitur a ullamcorper urna, vitae accumsan lorem. Nullam sit amet cursus dui, ut consectetur nibh. Curabitur ut justo lectus. Donec ipsum ipsum, viverra accumsan nunc a, auctor lacinia dolor. Morbi ultrices placerat ipsum in vestibulum. Quisque a pulvinar ligula.
+
+				Maecenas dictum, ipsum id pretium venenatis, est lacus laoreet tortor, sit amet mattis felis quam in nulla. Fusce convallis fringilla leo, et pellentesque dui iaculis vitae. Maecenas purus nibh, cursus quis justo a, luctus porttitor enim. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Maecenas varius erat eget ornare interdum. Nam lacinia est eros, accumsan sollicitudin nulla eleifend quis. In sed odio orci. Etiam eu maximus lorem. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam sagittis vel sapien in convallis. Donec in tortor id ante luctus euismod. Quisque sapien sapien, suscipit eget nibh a, sodales maximus nunc. Proin hendrerit felis sed vestibulum ornare. Nam mollis sodales nisi sed facilisis. Curabitur diam odio, sodales non venenatis maximus, tristique tempus turpis. Nunc dolor libero, posuere id imperdiet et, pellentesque sed est.
+
+				Duis velit nisl, imperdiet dictum velit dictum, consectetur rutrum ipsum. In eu enim ligula. Praesent dictum, risus at pharetra ultrices, arcu massa cursus nulla, vel laoreet purus sapien quis mi. Sed vel mi sit amet orci eleifend convallis ut lobortis lectus. In dui nibh, bibendum ac semper vitae, eleifend sit amet ex. Nulla dolor mi, dignissim ut sem nec, facilisis accumsan arcu. Phasellus molestie lacus sed nisl bibendum feugiat. Pellentesque mattis justo magna. Morbi vehicula congue leo nec sollicitudin. In vitae arcu sed nulla vehicula suscipit. Praesent cursus nec libero at auctor.
+
+				Quisque efficitur arcu velit, nec rutrum dui faucibus in. Duis maximus mauris nec eros bibendum viverra. Phasellus placerat porta leo et fermentum. Quisque pellentesque vel risus nec cursus. Sed et accumsan libero. Nunc ut augue dui. Donec ut lacinia arcu.
+
+				Maecenas sit amet massa eget turpis scelerisque imperdiet eu eget dui. Donec quis convallis ex. Quisque consequat mi eget lacus ultrices, sit amet gravida nisi pharetra. Nulla imperdiet rutrum condimentum. Vestibulum a mollis nisl. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Mauris vel orci ac dolor ullamcorper consectetur sed eu odio. Pellentesque aliquet nec diam in dapibus.
+			</p>
+		</div>
+	</div>
+
+		<div class="siekanyopis">
+	<div class="siekopis">
+		<img class="opislogo" src="siekany.png">
+		<p class="opistext">
+			Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam orci mi, faucibus a aliquam vitae, luctus ut odio. Curabitur a ullamcorper urna, vitae accumsan lorem. Nullam sit amet cursus dui, ut consectetur nibh. Curabitur ut justo lectus. Donec ipsum ipsum, viverra accumsan nunc a, auctor lacinia dolor. Morbi ultrices placerat ipsum in vestibulum. Quisque a pulvinar ligula.
+
+			Maecenas dictum, ipsum id pretium venenatis, est lacus laoreet tortor, sit amet mattis felis quam in nulla. Fusce convallis fringilla leo, et pellentesque dui iaculis vitae. Maecenas purus nibh, cursus quis justo a, luctus porttitor enim. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Maecenas varius erat eget ornare interdum. Nam lacinia est eros, accumsan sollicitudin nulla eleifend quis. In sed odio orci. Etiam eu maximus lorem. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam sagittis vel sapien in convallis. Donec in tortor id ante luctus euismod. Quisque sapien sapien, suscipit eget nibh a, sodales maximus nunc. Proin hendrerit felis sed vestibulum ornare. Nam mollis sodales nisi sed facilisis. Curabitur diam odio, sodales non venenatis maximus, tristique tempus turpis. Nunc dolor libero, posuere id imperdiet et, pellentesque sed est.
+
+			Duis velit nisl, imperdiet dictum velit dictum, consectetur rutrum ipsum. In eu enim ligula. Praesent dictum, risus at pharetra ultrices, arcu massa cursus nulla, vel laoreet purus sapien quis mi. Sed vel mi sit amet orci eleifend convallis ut lobortis lectus. In dui nibh, bibendum ac semper vitae, eleifend sit amet ex. Nulla dolor mi, dignissim ut sem nec, facilisis accumsan arcu. Phasellus molestie lacus sed nisl bibendum feugiat. Pellentesque mattis justo magna. Morbi vehicula congue leo nec sollicitudin. In vitae arcu sed nulla vehicula suscipit. Praesent cursus nec libero at auctor.
+
+			Quisque efficitur arcu velit, nec rutrum dui faucibus in. Duis maximus mauris nec eros bibendum viverra. Phasellus placerat porta leo et fermentum. Quisque pellentesque vel risus nec cursus. Sed et accumsan libero. Nunc ut augue dui. Donec ut lacinia arcu.
+
+			Maecenas sit amet massa eget turpis scelerisque imperdiet eu eget dui. Donec quis convallis ex. Quisque consequat mi eget lacus ultrices, sit amet gravida nisi pharetra. Nulla imperdiet rutrum condimentum. Vestibulum a mollis nisl. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Mauris vel orci ac dolor ullamcorper consectetur sed eu odio. Pellentesque aliquet nec diam in dapibus.
+		</p>
+	</div>
+		<img src="siek.jpg" class="zewnsiek">
+	</div> -->
+
+	
+
+	<div class="galeriashort">
+		
+	</div>
+
+	<footer>
+		<div class="kontakts">
+			<p class="ktxt">bądźmy w kontakcie:</p>
+			<h1 class="hram">Ramki Restauracja</h1>
+			<p class="adtxt">Piotrkowska 144, Łódź | 90-062</p>
+			<h1 class="hk">+48 604 508 853</h1>
+			<h1 class="hk">kontakt@restauracjaramki.pl</h1>
+		</div>
+		<div class="logas">
+			<img class="footimg" src="siekany.png">
+			<img class="footimg rmimg" src="ramkifoot.png">
+			<img class="footimg" src="delanoai.png">
+		</div>
+	</footer>
+
+	<div class="podpis">
+		<p class="pdtxt">2023 &copy; <!--<span style="color: #ECC00B;">-->Robert Stań<!--</span>--> dla Restauracji Ramki</p>
+	</div>
+
+	<script src="header.js"></script>
+
+</body>
+</html>

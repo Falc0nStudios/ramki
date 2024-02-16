@@ -1,0 +1,433 @@
+body
+{
+    width: 100%;
+    margin: 0px;
+    padding: 0px;
+    background-color: #101010;
+    color: white;
+    font-family: CodePro;
+}
+
+.kontaktcont
+{
+    width: auto;
+    height: fit-content;
+    display: flex;
+    padding: 10vh;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.kontakt
+{
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+}
+
+/*
+
+h1
+{
+    margin: 0 auto;
+    font-size: 8vh;
+    font-style: normal;
+    margin-bottom: 3vh;
+}
+
+h2
+{
+    font-size: 7vh;
+    margin-top: 2vh;
+    font-style: normal;
+    color: #ECC00B;
+    margin-left: 0;
+    margin-bottom: 0;
+}
+
+p
+{
+    font-size: 5vh;
+    margin: 0;
+    margin-top: 1vh;
+}
+*/
+.mailphone
+{
+    width: auto;
+    height: 5vh;
+    display: flex;
+    margin-top: 2vh;
+}
+
+.mailphonesiek
+{
+    width: auto;
+    height: 5vh;
+    display: flex;
+    margin-top: 2vh;
+    justify-content: flex-end
+}
+
+.marker
+{
+    width: 4vh;
+    margin-right: 1vw;
+    object-fit: contain;
+}
+
+.markersiek
+{
+    width: 5vh;
+    margin-left: 1vw;
+    margin-right: 5vw;
+}
+
+.mailnumer
+{
+    margin: 0;
+    font-size: 4vh;
+}
+
+.imgborder
+{
+    width: auto;
+    height: fit-content;
+    border: 8px solid #ECC00B;
+    padding: 2vh;
+    border-radius: 25px;
+    float: right;
+    clear: both;
+}
+
+.kontaktrez
+{
+    width: 40vw;
+    border-radius: 25px;
+}
+
+.siek
+{
+    margin-top: 10vh;
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 5vw;
+}
+
+.sitecontainer
+{
+    width: 100%;
+    height: fit-content;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: row;
+}
+
+.kontaktnr
+{
+    width: fit-content;
+    height: 90vh;
+    margin-top: 10vh;
+    margin-bottom: 10vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-content: center;
+}
+
+.rezform
+{
+    width: 25vw;
+    height: fit-content;
+    margin-top: 10vh;
+    margin-bottom: 10vh;
+    border: 8px solid #ECC00B;
+    border-radius: 35px;
+    display: flex;
+    justify-content: center;
+    font-size: 3vh;
+    align-items: center;
+    align-content: center;
+    flex-wrap: wrap;
+    overflow: hidden;
+}
+
+.rezlegend
+{
+    font-size: 5vh;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin-top: 0;
+    margin-bottom: 0;
+    margin: 0 auto;
+}
+
+.nota
+{
+    font-size: 4vh;
+    margin: 0;
+    max-width: 35vw;
+    word-break: break-word;
+}
+
+.telefony
+{
+    width: fit-content;
+}
+
+.tel
+{
+    font-size: 4vh;
+    text-decoration: none;
+    color: #ECC00B;
+}
+
+.nazrez
+{
+    margin: 0;
+    margin-bottom: 1vh;
+    font-size: 4vh;
+}
+
+form
+{
+    width: 25vw;
+    display: flex;
+    flex-direction: column;
+}
+
+form label
+{
+    padding-left: 1vw;
+    color: #ECC00B;
+    margin-bottom: 1vh;
+}
+
+form input
+{
+    height: fit-content;
+    font-size: 3vh;
+    background-color: transparent;
+    border: 3px solid white;
+    border-radius: 20px;
+    color-scheme: dark;
+    padding-left: 1vw;
+    color: #ECC00B;
+    padding-top: 0.5vh;
+    padding-bottom: 0.5vh;
+}
+
+form input:focus
+{
+    outline: none;
+    border: 3px solid #ECC00B;
+    color: white;
+}
+
+#name
+{
+
+}
+
+#guests
+{
+    
+}
+
+#email
+{
+    margin-bottom: 2.5vh;
+}
+
+#phone
+{
+    margin-bottom: 2.5vh;
+}
+
+#date
+{
+
+}
+
+#date::-webkit-calendar-picker-indicator
+{
+    margin-right: 0.1vw;
+}
+
+#time 
+{
+
+}
+
+#time::-webkit-calendar-picker-indicator
+{
+
+}
+
+input[type=time]::-webkit-clear-button
+{
+  display: none;
+}
+
+input[type=time]::-webkit-inner-spin-button
+{
+  display: none;
+}
+
+.iiig
+{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: row;
+    align-content: center;
+    flex-wrap: wrap;
+    gap: 5%;
+}
+
+.blocki
+{
+    width: 55%;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 2.5vh;
+}
+
+.blockg
+{
+    width: 40%;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 2.5vh;
+}
+
+.blockd
+{
+    width: 55%;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 2.5vh;
+}
+
+.blockgdz
+{
+    width: 40%;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 2.5vh;
+}
+
+.ramkiback
+{
+    height: 90vh;
+    display: block;
+    position: absolute;
+    margin: auto;
+    z-index: -1;
+    margin-top: -1.5vh;
+    filter: brightness(1);
+}
+
+#zarezerw
+{
+    margin-top: 2vh;
+    height: fit-content;
+    font-size: 3vh;
+    background-color: transparent;
+    border: 3px solid white;
+    border-radius: 28px;
+    color-scheme: dark;
+    padding-left: 1vw;
+    color: #ECC00B;
+    padding-top: 0.5vh;
+    padding-bottom: 0.5vh;
+}
+
+#zarezerw:hover
+{
+    background-color: #ECC00B;
+    color: white;
+    border: 3px solid #ECC00B;
+}
+
+.wsala
+{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 5%;
+}
+
+.wsala img
+{
+    height: 5vh;
+    
+}
+
+.psala
+{
+    width: 100%;
+    padding: 0;
+    border: 3px solid white;
+    border-radius: 25px;
+    display: flex;
+    justify-content: center;
+}
+
+[type=radio]
+{ 
+position: absolute;
+opacity: 0;
+width: 0;
+height: 0;
+}
+
+/* IMAGE STYLES */
+[type=radio] + img
+{
+cursor: pointer;
+}
+
+/* CHECKED STYLES */
+[type=radio]:checked + img
+{
+    filter: brightness(0) saturate(100%) invert(81%) sepia(44%) saturate(2441%) hue-rotate(1deg) brightness(99%) contrast(92%);
+}
+
+#uwg
+{
+    width: 95%;
+    height: 15vh;
+    resize: none;
+    font-size: 3vh;
+    background-color: transparent;
+    border: 3px solid white;
+    border-radius: 20px;
+    color-scheme: dark;
+    padding-left: 1vw;
+    color: #ECC00B;
+    padding-top: 0.5vh;
+    padding-bottom: 0.5vh;
+}
+
+#uwg:focus
+{
+    outline: none;
+    border: 3px solid #ECC00B;
+    color: white;
+}
+
+#uwg::-webkit-scrollbar
+{
+    width: 0;
+    border-radius: 35px;
+}

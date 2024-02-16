@@ -1,0 +1,139 @@
+body
+{
+	width: 100%;
+	margin: 0px;
+	padding: 0px;
+	background-color: #101010;
+	color: white;
+}
+
+.dzialphoto
+{
+	width: 100%;
+	height: fit-content;
+	text-align: center;
+	display: flex;
+	align-content: center;
+    justify-content: center;
+    align-items: center;
+    margin-top: 3vh;
+}
+
+.zarcietxt
+{
+	width: fit-content;
+	font-size: 5vh;
+	font-family: 'Agdasima', sans-serif;
+	margin: 0;
+	white-space: nowrap;
+}
+
+.row {
+	display: flex;
+	flex-wrap: wrap;
+	padding: 0 4px;
+	justify-content: center;
+}
+
+.column {
+  flex: 25%;
+  max-width: 25%;
+  padding: 0 0.5vw;
+  margin-bottom: 10vh;
+}
+
+#photo
+{
+  vertical-align: middle;
+  width: 100%;
+}
+
+#photo:hover
+{
+	filter: brightness(50%);
+	cursor: pointer;
+}
+
+.fulcon
+{
+	position: relative;
+	width: fit-content;
+	margin-top: 1vw;
+}
+
+.fulico
+{
+	position: absolute; 
+	margin: 0 auto;
+	width: 2vw;
+	opacity: 0;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%,-50%);
+	Pointer-events: none;
+}
+
+.fulcon:hover .fulico
+{
+  opacity: 1;
+}
+
+#fullekran
+{
+	width: 100%;
+	height: 100vh;
+	background-color: rgba(0, 0, 0, 0.9);
+	display: none;
+	position: sticky;
+	top: 0;
+	left: 0;
+	z-index: 2;
+	flex-direction: row;
+	justify-content: center;
+	align-content: center;
+	align-items: center;
+	gap: 5vw;
+}
+
+.feocont
+{
+	width: 70%;
+	height: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+#feo
+{
+	max-width: 100%;
+	max-height: 100%;
+}
+
+.fullclose
+{
+	height: 2vh;
+	position: absolute;
+	top: 1vh;
+	right: 1vh;
+	cursor: pointer;
+}
+
+.previmg
+{
+	height: 5vh;
+	cursor: pointer;
+}
+
+.nextimg
+{
+	height: 5vh;
+	cursor: pointer;
+}
+
+.btnoff
+{
+	filter: brightness(0.5);
+	pointer-events: none;
+}
+
